@@ -1,0 +1,9 @@
+opencv-python == 4.1.2.30
+tensorboardX
+pyyaml
+anyconfig
+munch
+scipy
+timm
+shapely
+pyclipper

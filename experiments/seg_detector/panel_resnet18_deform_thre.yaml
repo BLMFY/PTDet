@@ -1,0 +1,25 @@
+import:
+    - 'experiments/seg_detector/base_panel.yaml' #0.56 88.97
+package: []
+define:
+  - name: 'Experiment'
+    class: Experiment
+    structure: 
+        class: Structure
+        builder: 
+            class: Builder
+            model: SegDetectorModel
+            model_args:
+                backbone: deformable_resnet18
+                decoder: SegDetector
+                decoder_args: 
+                    adaptive: True
+                    in_channels: [64, 128, 256, 512]
+                    k: 50
+                loss_class: L1BalanceCELoss
+
+        representer:
+            class: SegDetectorRepresenter
+            max_candidates: 1000
+
+
