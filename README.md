@@ -1,9 +1,13 @@
-# Intelligent Fish Detection System with Similarity-Aware Transformer 
+# Prompt-Based Dynamic Text Detector for Real-Time Industrial Panel Monitoring
 
-### Shengchen Li, Haobo Zuo, Changhong Fu, Zhiyong Wang, Zhiqiang Xu
+### Haowen Zheng, Hua Lin, Haobo Zuo, Changhong Fu
 
 ## Abstract
-The monitoring of industrial panels and instruments has intelligent implementation schemes under the development of computer vision. The previous manual monitoring methods for industrial panels had the disadvantages of being laborious, costly, and having inaccurate records with poor real-time performance. An intelligent visual monitoring system was developed using a high-frequency camera for real-time data recording to address these issues. In addition, this paper proposes a text detection framework PTD that can be prompted at will to detect key areas in real-time based on prompt information. Specifically, processing the point prompt into an adaptive Gaussian mask can filter the miscellaneous information in the scene. Moreover, the proposed compound directional difference convolution with the medium self-attention in CDAN can extract feature textures and edges under screen reflection and blurred text conditions to accurately obtain effective information. Experiments were conducted on a large amount of challenging industrial panel test scene data according to strict benchmarks, proving the superiority of the proposed method. It is deployed on the i9 + NVIDIA RTX3060 platform with an inference speed of 33.1 FPS, confirming the effectiveness and feasibility of the method. 
+As an important part of industrial production test equipment, industrial panels often display critically important data and information. 
+However, traditional manual methods can no longer achieve the required levels of efficiency and precision for the real-time monitoring and recording of a large volume of dynamic text on panels. To reduce the labor cost of the task and improve monitoring accuracy, this work develops an intelligent visual monitoring system to monitor recorded data in real-time. Specifically, a prompt-based dynamic text detector (PTDet) is proposed for real-time high-precision detection of dynamic text targets in prompt regions. A dynamic adaptive prompt framework is designed to skillfully encode the point prompt into the detector. It can strengthen the prediction of key areas and redundant targets by weakening the background. Moreover, compound direction aggressive network (CDAN) is proposed to enhance the extraction of compound directional feature texture and edges to reduce screen reflections and text blurring. Set data and challenging benchmarks in over 50 real-world industrial test scenarios to prove the validity and robustness of PTDet experimentally. Real-world applications also show its practicability with 33.1 FPS.
+
+## Overview
+![Overview of the proposed PTDet framework.](/fig/total7.pdf)
 ## About Code
 ### 1. Requirements:
 - Python3
@@ -43,7 +47,7 @@ If you have any questions, please contact me.
 
 Haowen zheng
 
-Email: [@tongji.edu.cn](shengcli@tongji.edu.cn)
+Email: [@tongji.edu.cn](2211329@tongji.edu.cn)
 
 For more evaluations, please refer to our paper.
 
