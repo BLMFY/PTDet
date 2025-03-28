@@ -7,7 +7,7 @@ As an important part of industrial production test equipment, industrial panels 
 However, traditional manual methods can no longer achieve the required levels of efficiency and precision for the real-time monitoring and recording of a large volume of dynamic text on panels. To reduce the labor cost of the task and improve monitoring accuracy, this work develops an intelligent visual monitoring system to monitor recorded data in real-time. Specifically, a prompt-based dynamic text detector (PTDet) is proposed for real-time high-precision detection of dynamic text targets in prompt regions. A dynamic adaptive prompt framework is designed to skillfully encode the point prompt into the detector. It can strengthen the prediction of key areas and redundant targets by weakening the background. Moreover, compound direction aggressive network (CDAN) is proposed to enhance the extraction of compound directional feature texture and edges to reduce screen reflections and text blurring. Set data and challenging benchmarks in over 50 real-world industrial test scenarios to prove the validity and robustness of PTDet experimentally. Real-world applications also show its practicability with 33.1 FPS.
 
 ## Overview
-![Overview of the proposed PTDet framework.](/fig/total7.pdf)
+![Overview of the proposed PTDet framework.](/fig/total.jpg)
 ## About Code
 ### 1. Requirements:
 - Python3
